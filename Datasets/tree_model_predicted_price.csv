@@ -1,0 +1,400 @@
+"Township","Area","State","Primary_Type","Multi_Type","Primary_Tenure","Median_PSF","Transactions","Actual","Predicted"
+"taman lagenda teluk intan","teluk intan","perak","terrace house",1,0,126,309.000000000001,236593.99999999,257442.799087684
+"taman bukit indah","iskandar puteri (nusajaya)","johor","terrace house",0,1,425.000000000001,259.000000000001,694999.999999979,601410.668601714
+"taman universiti","skudai","johor","terrace house",0,1,307.000000000001,202.000000000001,394000.000000011,368168.862766419
+"taman kirana","kluang","johor","terrace house",0,0,125,188,170799.999999999,257442.799087684
+"taman scientex","pasir gudang","johor","terrace house",1,1,386.999999999999,177,380000.000000012,601410.668601714
+"taman daya","tebrau","johor","cluster house",1,1,330.999999999999,171.999999999999,503999.999999997,731320.085641864
+"horizon hills","iskandar puteri (nusajaya)","johor","terrace house",0,1,499.999999999999,171,1179999.99999994,601410.668601714
+"d'summit residences","skudai","johor","service residence",0,1,601.999999999999,165,452899.999999998,919891.984987014
+"taman desa tebrau","tebrau","johor","terrace house",1,1,469.999999999998,163,929999.999999965,601410.668601714
+"taman arowana [lenggeng]","lenggeng","negeri sembilan","terrace house",0,0,310,152.000000000001,476240.000000014,368168.862766419
+"seksyen 30 shah alam","shah alam","selangor","semi d",1,1,307.999999999999,139.999999999999,494999.999999987,368168.862766419
+"taman setia indah","tebrau","johor","terrace house",0,1,382.000000000002,118.000000000001,610000.000000003,601410.668601714
+"flat taman ungku tun aminah","skudai","johor","flat",0,1,283.000000000001,117,139999.999999994,155287.588965247
+"meridin east","pasir gudang","johor","terrace house",0,1,413.999999999998,115,579999.999999999,601410.668601714
+"oug parklane","jalan klang lama (old klang road)","kuala lumpur","service residence",0,1,611.000000000003,102,579999.999999999,919891.984987014
+"perwira seri iskandar","seri iskandar","perak","terrace house",0,0,104,91.9999999999999,144999.999999998,257442.799087684
+"taman austin duta","tebrau","johor","terrace house",1,1,493,91.9999999999999,780999.999999983,601410.668601714
+"taman pulai mutiara 2","skudai","johor","terrace house",1,1,251.999999999999,88.0000000000003,564229.99999998,368168.862766419
+"eka heights - precinct 3b","labu","negeri sembilan","terrace house",0,1,267,86.9999999999997,399999.999999992,368168.862766419
+"taman seri mahkota","sitiawan","perak","terrace house",0,1,178.999999999999,81.9999999999997,250000.000000004,257442.799087684
+"bukit jelutong","shah alam","selangor","semi d",1,1,437,81.0000000000001,980000.000000045,731320.085641864
+"bandar country homes","rawang","selangor","terrace house",1,1,312.999999999999,78.9999999999999,420000.00000002,368168.862766419
+"per. permatang badak perdana (pl 177521)","kuantan","pahang","terrace house",0,0,232,77.9999999999999,325000.000000008,368168.862766419
+"taman megah ria","masai","johor","terrace house",1,1,319.999999999999,75.9999999999999,436439.999999984,601410.668601714
+"bandar puchong jaya","puchong","selangor","terrace house",0,1,513,74,724999.999999991,601410.668601714
+"taman pulai mutiara","skudai","johor","terrace house",1,1,426,68.0000000000002,550000.000000025,601410.668601714
+"taman polo laguna @ tambun","ipoh","perak","terrace house",0,0,349.000000000001,63.9999999999999,487800.000000021,601410.668601714
+"taman harmonis fasa 2","seri iskandar","perak","terrace house",1,0,174.999999999999,63.9999999999999,239999.999999993,257442.799087684
+"taman kamunting putra fasa 1","kamunting","perak","terrace house",0,0,131,62.9999999999998,171000.000000001,257442.799087684
+"taman gadong jaya","labu","negeri sembilan","terrace house",1,1,207,60,280000.000000004,368168.862766419
+"alam sari bangi","bangi","selangor","terrace house",1,1,415.999999999999,60,856999.999999985,601410.668601714
+"bandar sungai buaya","serendah","selangor","terrace house",0,0,188,60,299999.999999989,257442.799087684
+"taman ria","sungai petani","kedah","terrace house",0,1,152.000000000001,59,220000,257442.799087684
+"taman samarindah","kota samarahan","sarawak","terrace house",0,1,168,59,299999.999999989,257442.799087684
+"royal domain sri putramas 2","jalan kuching","kuala lumpur","condominium",0,1,669.000000000001,59,850000.000000001,919891.984987014
+"ambang botanic","klang","selangor","semi d",1,1,546.000000000003,58,1589999.99999998,919891.984987014
+"taman tasik indah","kluang","johor","terrace house",0,1,258.000000000001,58,614000.000000013,368168.862766419
+"bandar puteri jaya seksyen 1","sungai petani","kedah","terrace house",0,1,200.000000000001,55,228000.000000005,368168.862766419
+"taman mount austin","tebrau","johor","terrace house",1,1,441.000000000002,55,699999.99999997,601410.668601714
+"seksyen 2 wangsa maju flat","wangsa maju","kuala lumpur","flat",0,0,379.999999999999,53.9999999999998,224499.99999999,380540.233931346
+"kuala berang","hulu terengganu","terengganu","bungalow",1,1,61.9999999999999,52.9999999999999,200000.000000005,100696.393896423
+"taman bukit senawang perdana","rantau","negeri sembilan","terrace house",0,1,67.0000000000003,52.0000000000001,79999.9999999985,100696.393896423
+"taman air biru","pasir gudang","johor","semi d",1,0,245.000000000001,49.0000000000002,269999.999999997,368168.862766419
+"taman sri pulai perdana","kulai","johor","terrace house",0,1,382.000000000002,49.0000000000002,499000.000000022,601410.668601714
+"taman bandar utama tampin","tampin","negeri sembilan","semi d",1,1,144.999999999999,47.0000000000001,299472.999999986,257442.799087684
+"taman lagenda","padang serai","kedah","terrace house",0,1,214,46.0000000000002,292499.999999986,368168.862766419
+"meru sentosa","ipoh","perak","terrace house",0,0,235,45,340194.000000011,368168.862766419
+"bandar ekar","rantau","negeri sembilan","terrace house",0,1,144.999999999999,42.0000000000001,235788.999999991,257442.799087684
+"rpa sri tanjung","sungai petani","kedah","terrace house",0,1,42.9999999999999,41.0000000000001,27049.000000001,100696.393896423
+"bandar bestari@canary garden","klang","selangor","cluster house",0,1,620.000000000002,40.0000000000001,1449664.99999997,919891.984987014
+"taman canning","ipoh","perak","terrace house",1,1,171,39.0000000000001,425000.000000019,257442.799087684
+"rpr bandar baru samariang","kuching","sarawak","terrace house",0,0,195.000000000001,39.0000000000001,200000.000000005,257442.799087684
+"taman pulai utama","skudai","johor","terrace house",0,1,340.000000000001,39.0000000000001,595000.00000002,601410.668601714
+"taman sutera","perling","johor","terrace house",0,1,306,39.0000000000001,780000.000000019,368168.862766419
+"venice hill","cheras","selangor","condominium",0,1,161.999999999999,39.0000000000001,250000.000000004,257442.799087684
+"taman merpati indah","kulim","kedah","terrace house",0,1,330.000000000001,38.0000000000002,462000.000000011,601410.668601714
+"mutiara hills @ semenyih","semenyih","selangor","terrace house",0,1,391.000000000002,38.0000000000002,547770.000000006,601410.668601714
+"bandar seri alam","pasir gudang","johor","terrace house",0,1,361,38.0000000000002,339999.999999985,601410.668601714
+"taman gaya","ulu tiram","johor","cluster house",0,1,408.999999999999,38.0000000000002,1034400.00000002,380540.233931346
+"scientex kundang jaya","rawang","selangor","terrace house",0,1,402.999999999999,36.9999999999998,504338.999999992,601410.668601714
+"taman muhibah","kulai","johor","terrace house",0,1,341.999999999998,36.9999999999998,290000.000000013,601410.668601714
+"tebrau city residences","tebrau","johor","service residence",0,1,364.999999999999,36.9999999999998,380000.000000012,380540.233931346
+"denai alam","shah alam","selangor","terrace house",0,1,445.999999999998,36,899999.999999958,601410.668601714
+"eco ardence","setia alam","selangor","bungalow",1,1,708,36,1879999.99999994,919891.984987014
+"irama sendayan 2d","labu","negeri sembilan","terrace house",0,1,443.999999999998,36,628888.000000008,601410.668601714
+"taman sutera utama","skudai","johor","cluster house",1,1,474.000000000001,36,1065000.00000004,731320.085641864
+"taman pantai sepang putra","sepang","selangor","bungalow",0,1,109,34.9999999999999,399999.999999992,257442.799087684
+"taman nusa idaman","iskandar puteri (nusajaya)","johor","semi d",0,1,368,34.9999999999999,780000.000000019,380540.233931346
+"kipark apartment","tampoi","johor","apartment",0,0,443.000000000002,34.9999999999999,380000.000000012,380540.233931346
+"cyber city apartment 1","penampang","sabah","apartment",0,1,480.000000000002,34.9999999999999,239999.999999993,380540.233931346
+"taman terubong jaya","ayer itam","penang","flat",0,0,272.000000000001,33.9999999999999,164999.999999997,155287.588965247
+"lake view suites","tebrau","johor","apartment",0,1,359.000000000001,33.9999999999999,292999.999999999,380540.233931346
+"9ine (residensi sembilan)","cheras","selangor","condominium",0,1,801,33.9999999999999,970000.000000034,919891.984987014
+"taman anjung gapam","bemban","melaka","bungalow",0,0,136,32.0000000000001,632000.000000004,257442.799087684
+"taman duranda emas","kuching","sarawak","terrace house",0,0,174,32.0000000000001,179999.999999991,257442.799087684
+"pusat bandar puchong","puchong","selangor","terrace house",0,1,531,32.0000000000001,762499.999999997,919891.984987014
+"taman lahat sentosa (mosey hill)","ipoh","perak","terrace house",0,0,207,31.0000000000001,399879.999999993,368168.862766419
+"taman bidor bistari","bidor","perak","terrace house",0,0,132,31.0000000000001,185000.000000007,257442.799087684
+"taman astana chemor","ipoh","perak","terrace house",0,0,102,31.0000000000001,89999.9999999998,257442.799087684
+"ulu sungai merah","sibu","sarawak","terrace house",0,0,173,31.0000000000001,429999.99999998,257442.799087684
+"taman iringan bayu","rantau","negeri sembilan","terrace house",1,1,330.999999999999,31.0000000000001,472910.00000001,601410.668601714
+"taman cheras perdana","cheras","selangor","terrace house",0,1,361,31.0000000000001,445000.00000001,601410.668601714
+"flat taman perling","perling","johor","flat",0,1,273,31.0000000000001,150000.000000001,155287.588965247
+"arc @ austin hills","johor bahru","johor","service residence",0,1,506.000000000002,31.0000000000001,360000.000000003,380540.233931346
+"taman seri andalas","klang","selangor","semi d",1,0,287,30.0000000000001,475000.00000001,368168.862766419
+"taman pandan perdana","ampang","selangor","terrace house",0,0,483.999999999999,30.0000000000001,722499.999999983,601410.668601714
+"the z residence","bukit jalil","kuala lumpur","condominium",0,1,493,30.0000000000001,627999.999999977,380540.233931346
+"taman juasseh sentosa fasa 2","juasseh","negeri sembilan","terrace house",0,1,158,28.9999999999999,249799.999999997,257442.799087684
+"taman desa saujana","arau","perlis","semi d",1,1,205,28.9999999999999,414428.000000003,368168.862766419
+"jade hills","kajang","selangor","semi d",1,1,495,28.9999999999999,2330000.00000004,731320.085641864
+"yarra park (residensi sinar)","sungai petani","kedah","terrace house",0,1,143,27.9999999999999,200000.000000005,257442.799087684
+"lot 11666-11704 perumahan balok perdana","sungai karang","pahang","terrace house",0,0,205,27.9999999999999,315000.000000009,368168.862766419
+"bandar baru kampar","kampar","perak","terrace house",0,0,195.000000000001,27.9999999999999,272499.99999999,257442.799087684
+"taman soon hup(jalan permai)","sibu","sarawak","terrace house",0,0,178.999999999999,27.9999999999999,377499.999999994,257442.799087684
+"taman klebang putra","ipoh","perak","terrace house",0,1,209,27.9999999999999,317599.999999994,368168.862766419
+"taman bukit rebana [sp heights]","sungai petani","kedah","semi d",0,1,114.000000000001,27.9999999999999,299999.999999989,257442.799087684
+"taman bukit mewah","kajang","selangor","terrace house",0,1,327.999999999999,27.9999999999999,469999.999999981,601410.668601714
+"bandar metro puchong","puchong","selangor","terrace house",0,0,546.999999999999,27.9999999999999,925000.000000036,919891.984987014
+"rampai court","wangsa maju","kuala lumpur","apartment",0,1,389.999999999999,27.9999999999999,230999.999999993,380540.233931346
+"flat taman melati","setapak","kuala lumpur","flat",0,1,326.000000000001,27.9999999999999,207500.000000002,380540.233931346
+"taman angsamas 2","rasah","negeri sembilan","terrace house",0,1,67.0000000000003,27,79999.9999999985,100696.393896423
+"skim perumahan perakku, tanjung tualang","tanjong tualang","perak","terrace house",0,0,117,27,179999.999999991,257442.799087684
+"setia impian 4","setia alam","selangor","terrace house",0,1,537.999999999998,27,704999.999999996,919891.984987014
+"desa park chemor","ipoh","perak","cluster house",0,1,270.000000000002,25.9999999999999,338000.000000015,368168.862766419
+"bandar baru kota putri","masai","johor","terrace house",0,1,391.000000000002,25.9999999999999,334999.999999999,601410.668601714
+"taman angsamas","rasah","negeri sembilan","terrace house",0,1,171.999999999999,25.9999999999999,204999.999999991,257442.799087684
+"taman putra permai","seri kembangan","selangor","terrace house",0,0,341.999999999998,25.9999999999999,722499.999999983,601410.668601714
+"uda utama","skudai","johor","terrace house",1,1,324,25,600000.000000009,601410.668601714
+"taman perdana","simpang ampat","penang","terrace house",0,1,373.999999999999,25,575000.000000007,601410.668601714
+"savanna executive suite @ southville city","bangi","selangor","service residence",0,1,375.999999999998,25,360000.000000003,380540.233931346
+"trefoil","setia alam","selangor","service residence",0,1,548.000000000003,25,299999.999999989,919891.984987014
+"taman nusa intan","ampangan","negeri sembilan","terrace house",0,1,230.999999999999,24.0000000000001,382499.999999989,368168.862766419
+"taman bukit rangin perdana 1 & 2","kuantan","pahang","terrace house",0,0,173,24.0000000000001,225000.00000001,257442.799087684
+"seksyen 13 shah alam","shah alam","selangor","bungalow",1,0,451.999999999999,24.0000000000001,1750000.00000001,731320.085641864
+"tanjong pinang","tanjong tokong","penang","terrace house",0,1,1146.00000000001,24.0000000000001,3449999.99999985,2019708.77574512
+"country villas","bemban","melaka","semi d",1,0,387.999999999999,24.0000000000001,644999.999999994,731320.085641864
+"rasah kemayan (kemayan country township)","rasah","negeri sembilan","bungalow",0,1,128,23,620000.000000015,257442.799087684
+"seksyen 27 shah alam","shah alam","selangor","terrace house",1,1,375.999999999998,23,699999.99999997,601410.668601714
+"taman wira (rpa mergong)","alor setar","kedah","terrace house",0,1,38.0000000000002,23,39600.0000000011,100696.393896423
+"setapak jaya","setapak","kuala lumpur","cluster house",0,0,384.999999999998,23,239999.999999993,380540.233931346
+"taman klebang jaya","chemor","perak","terrace house",0,0,167.000000000001,23,200000.000000005,257442.799087684
+"taman kelemak utama","alor gajah","melaka","terrace house",0,1,306,23,398759.999999984,368168.862766419
+"seksyen 21","petaling jaya","selangor","terrace house",1,1,493,23,763000.000000005,601410.668601714
+"bandar bukit tinggi","pandamaran","selangor","terrace house",0,1,455,23,685999.999999984,601410.668601714
+"i-park apartment","sungai ara","penang","flat",0,1,375,23,250000.000000004,380540.233931346
+"the platino serviced apartment","tampoi","johor","service residence",0,1,666.000000000001,23,601900.000000022,919891.984987014
+"taman lang residences","ipoh","perak","terrace house",0,1,327.999999999999,22.0000000000001,459799.999999991,601410.668601714
+"taman juasseh sentosa","juasseh","negeri sembilan","terrace house",0,1,67.0000000000003,22.0000000000001,81500.0000000038,100696.393896423
+"desa coalfields","ijok","selangor","terrace house",0,1,324,22.0000000000001,467500.00000001,601410.668601714
+"taman desa puteri","bahau","negeri sembilan","terrace house",0,1,178.999999999999,22.0000000000001,299999.999999989,257442.799087684
+"taman saujana rawang","rawang","selangor","terrace house",0,0,314.999999999999,22.0000000000001,520999.999999998,368168.862766419
+"behrang 2020 / taman wawasan","ulu bernam","perak","terrace house",0,1,198.000000000001,22.0000000000001,252500.000000012,257442.799087684
+"jalan jenderam-salak","dengkil","selangor","cluster house",0,1,616,20.9999999999999,1438799.99999999,919891.984987014
+"taman saga","kulim","kedah","terrace house",1,1,165.999999999999,20.9999999999999,269500.000000003,257442.799087684
+"taman setapak (setapak garden)","setapak","kuala lumpur","terrace house",0,1,341.000000000001,20.9999999999999,600000.000000009,601410.668601714
+"taman lumut mewah 2","lumut","perak","terrace house",0,1,262.999999999999,20.9999999999999,418799.999999992,368168.862766419
+"bayu puteri 3","johor bahru","johor","apartment",0,0,372.000000000001,20.9999999999999,350000.000000001,380540.233931346
+"ss23 taman sea","petaling jaya","selangor","terrace house",0,1,797.000000000004,20,1372499.99999997,919891.984987014
+"bb setia awan perdana residen 7","sitiawan","perak","cluster house",0,1,129,20,247999.999999995,257442.799087684
+"perkampungan cenderawasih","kuantan","pahang","terrace house",0,0,217,20,204999.999999991,368168.862766419
+"taman hijrah","kapar","selangor","terrace house",0,1,355.000000000002,20,449999.999999999,601410.668601714
+"taman seri bayu","sungai petani","kedah","terrace house",0,1,164,20,200000.000000005,257442.799087684
+"tamu hill park","batang kali","selangor","terrace house",0,1,244,20,399999.999999992,368168.862766419
+"setia eco cascadia","tebrau","johor","terrace house",0,1,462.000000000001,20,814299.999999982,601410.668601714
+"taman tun hussein onn","perai","penang","flat",0,1,195.000000000001,20,110000.000000005,155287.588965247
+"ridzuan condominium","bandar sunway","selangor","condominium",0,0,419.999999999998,20,499999.999999986,380540.233931346
+"rumah pangsa college heights pajam","mantin","negeri sembilan","flat",0,1,114.000000000001,20,70000.0000000003,65346.6025552173
+"taman wangsa permai","kepong","selangor","terrace house",0,0,488.000000000001,19,737000.00000002,601410.668601714
+"garden homes @ seremban 2","seremban 2","negeri sembilan","terrace house",0,1,220,19,369999.999999997,368168.862766419
+"atabara residence fasa 8 (pl 76003)","kuantan","pahang","terrace house",0,1,163,19,325000.000000008,257442.799087684
+"bandar baru sungai buloh","sungai buloh","selangor","terrace house",0,0,314.999999999999,19,439999.999999981,368168.862766419
+"central city","kota samarahan","sarawak","terrace house",0,1,205,19,350000.000000001,368168.862766419
+"setia indah 9","setia alam","selangor","terrace house",0,1,608.000000000002,19,1049999.99999999,919891.984987014
+"taman bukit sendayan","bandar sri sendayan","negeri sembilan","terrace house",0,0,192,19,250000.000000004,257442.799087684
+"taman senai utama","kulai","johor","terrace house",0,1,260.000000000001,19,420000.00000002,368168.862766419
+"taman desa palma","tebrau","johor","terrace house",0,1,372.000000000001,19,577150.000000024,601410.668601714
+"taman selayang jaya","selayang","selangor","terrace house",0,1,550.999999999998,19,680000.000000007,919891.984987014
+"putri ria apartment","masai","johor","apartment",0,1,281.000000000001,19,265000.000000011,368168.862766419
+"seri mutiara","setia alam","selangor","apartment",0,1,347.999999999999,19,330000.000000012,380540.233931346
+"taman penampang apartment","penampang","sabah","apartment",0,0,335.999999999998,19,339999.999999985,380540.233931346
+"vista seri melalin","tuaran","sabah","apartment",0,0,287,19,290000.000000013,368168.862766419
+"taman melor","tampoi","johor","flat",0,0,232,19,115000.000000002,155287.588965247
+"taman sejati lakeside","cyberjaya","selangor","terrace house",0,1,587.000000000002,17.9999999999999,1311149.99999994,919891.984987014
+"perumahan makmur kuala lanar jaya","kuala lipis","pahang","semi d",0,0,47.9999999999999,17.9999999999999,150000.000000001,100696.393896423
+"taman machang bubok","bukit mertajam","penang","terrace house",0,1,386.999999999999,17.9999999999999,480000.000000012,601410.668601714
+"taman bandar baru lahat","lahat","perak","terrace house",0,0,239,17.9999999999999,255099.999999999,368168.862766419
+"taman sungai besi indah","seri kembangan","selangor","terrace house",1,1,352.000000000001,17.9999999999999,480000.000000012,601410.668601714
+"taman pertama indah ~ jalan bakri","bakri","johor","terrace house",0,1,373.000000000002,17.9999999999999,819999.999999971,601410.668601714
+"prima sp baiduri (sp 1)","sungai petani","kedah","terrace house",0,1,178.999999999999,17.9999999999999,269999.999999997,257442.799087684
+"taman desa","taman desa","kuala lumpur","terrace house",0,1,672,17.9999999999999,1425000.00000002,919891.984987014
+"putrajaya presint 11","putrajaya","putrajaya","semi d",1,1,465.000000000002,17.9999999999999,880000.000000009,731320.085641864
+"taman salak idaman","sepang","selangor","terrace house",0,1,274,17.9999999999999,396499.999999985,368168.862766419
+"the pines residence","gelang patah","johor","apartment",0,0,325.000000000001,17.9999999999999,330000.000000012,380540.233931346
+"forest green","bandar sungai long","selangor","condominium",0,1,599,17.9999999999999,600000.000000009,919891.984987014
+"bukit cheras","cheras","kuala lumpur","flat",0,1,262.999999999999,17.9999999999999,160000.000000006,155287.588965247
+"verve suites kl south","jalan klang lama (old klang road)","kuala lumpur","service residence",0,1,1097,17.9999999999999,778800.000000015,2019708.77574512
+"sunway alam suria","shah alam","selangor","terrace house",0,0,394.999999999999,17.0000000000001,699999.99999997,601410.668601714
+"pjs 9","bandar sunway","selangor","terrace house",0,0,548.999999999999,17.0000000000001,940000.000000013,919891.984987014
+"nusari aman 2","bandar sri sendayan","negeri sembilan","semi d",1,1,226.999999999999,17.0000000000001,499999.999999986,368168.862766419
+"hijauan selayang","selayang","selangor","terrace house",0,0,1071,17.0000000000001,1498800.00000005,2019708.77574512
+"sentral behrang","ulu bernam","perak","terrace house",1,0,285,17.0000000000001,398887.999999999,368168.862766419
+"taman desa lang indah","ipoh","perak","terrace house",0,1,314.999999999999,17.0000000000001,528799.999999993,368168.862766419
+"taman sri unas 2","muar","johor","bungalow",1,1,155.000000000001,17.0000000000001,394000.000000011,257442.799087684
+"ara damansara","ara damansara","selangor","bungalow",1,1,729.000000000001,17.0000000000001,1300000.00000005,919891.984987014
+"taman lembah merbok","merbok","kedah","terrace house",0,1,150.000000000001,17.0000000000001,209999.999999999,257442.799087684
+"taman bertam setia","tanjong minyak","melaka","terrace house",1,1,203.000000000001,17.0000000000001,343999.999999988,368168.862766419
+"taman lembah permai","sungai lalang","kedah","terrace house",0,1,147,17.0000000000001,229999.999999992,257442.799087684
+"casa tropicana","tropicana","selangor","condominium",0,0,464.000000000002,17.0000000000001,540000.000000024,380540.233931346
+"the pearl (pearl point)","jalan klang lama (old klang road)","kuala lumpur","condominium",0,1,368,17.0000000000001,399999.999999992,380540.233931346
+"residensi warnasari 3","bandar puncak alam","selangor","apartment",0,0,257,17.0000000000001,185000.000000007,368168.862766419
+"danau idaman","taman desa","kuala lumpur","condominium",0,0,421.999999999999,17.0000000000001,395000.000000016,380540.233931346
+"pangsapuri wira","cheras","selangor","apartment",0,1,312.999999999999,17.0000000000001,256000,368168.862766419
+"impiana","iskandar puteri (nusajaya)","johor","apartment",0,1,415.000000000001,17.0000000000001,460000.00000001,380540.233931346
+"desa palma","nilai","negeri sembilan","apartment",0,1,228,17.0000000000001,179999.999999991,368168.862766419
+"menara u","shah alam","selangor","service residence",0,0,585.999999999999,17.0000000000001,334999.999999999,919891.984987014
+"leader garden","tanjung bungah","penang","condominium",0,1,396,17.0000000000001,439999.999999981,380540.233931346
+"ss14","subang jaya","selangor","semi d",1,1,389.999999999999,16,868999.999999974,731320.085641864
+"bandar baru segari","lumut","perak","cluster house",0,0,156,16,328000.000000006,257442.799087684
+"taman batu pahat","batu pahat","johor","terrace house",1,1,167.000000000001,16,299999.999999989,257442.799087684
+"taman kulim utama","kulim","kedah","terrace house",1,1,232,16,489999.999999995,368168.862766419
+"taman cahaya suria","alor setar","kedah","terrace house",1,1,206,16,311111.000000003,368168.862766419
+"taman muzaffar shah","bukit katil","melaka","terrace house",1,0,171.999999999999,16,280000.000000004,257442.799087684
+"taman guar perahu (taman berkat)","kubang semang","penang","terrace house",0,1,240.999999999999,16,292499.999999986,368168.862766419
+"hijayu 3","bandar sri sendayan","negeri sembilan","terrace house",0,1,277.000000000001,16,505000.000000002,368168.862766419
+"seri kasturi apartments","setia alam","selangor","apartment",0,1,406.999999999998,16,389999.999999989,380540.233931346
+"bandar baru uda","johor bahru","johor","flat",0,0,288.999999999999,16,161499.999999992,155287.588965247
+"taman jati","kulim","kedah","flat",0,1,206,16,120000.000000002,155287.588965247
+"taman kajang perdana","kajang","selangor","flat",0,0,63.9999999999999,16,41999.9999999998,65346.6025552173
+"endah ria","sri petaling","kuala lumpur","condominium",0,0,319.999999999999,16,307499.999999997,380540.233931346
+"vista mutiara","kepong","kuala lumpur","apartment",0,0,364,16,379000.000000014,380540.233931346
+"taman amanah","tanjong duabelas","selangor","terrace house",0,1,278.000000000001,15,425000.000000019,368168.862766419
+"taman intan duyung","port dickson","negeri sembilan","terrace house",0,0,150.000000000001,15,220000,257442.799087684
+"taman ehsan jaya","johor bahru","johor","terrace house",0,0,455,15,777999.999999978,601410.668601714
+"taman senawang perdana","rantau","negeri sembilan","bungalow",0,1,171.999999999999,15,714999.999999969,257442.799087684
+"taman sri perdana","lahad datu","sabah","semi d",1,0,191,15,550000.000000025,257442.799087684
+"taman bersatu","simpang pulai","perak","terrace house",0,0,204.000000000001,15,198999.999999994,368168.862766419
+"taman maluri","cheras","kuala lumpur","terrace house",0,0,303,15,780000.000000019,368168.862766419
+"taman nusa jaya mas","iskandar puteri (nusajaya)","johor","terrace house",0,1,325.000000000001,15,519999.999999995,601410.668601714
+"taman suria (sun land residence)","ipoh","perak","terrace house",0,0,328.999999999999,15,548000.000000026,601410.668601714
+"austra height","bintulu","sarawak","terrace house",0,0,340.000000000001,15,380000.000000012,601410.668601714
+"taman megah","batu pahat","johor","terrace house",0,1,195.000000000001,15,330000.000000012,257442.799087684
+"pangsapuri palma","klang","selangor","apartment",0,1,259.000000000001,15,170000,368168.862766419
+"gravit8","port klang","selangor","service residence",0,1,492.000000000001,15,380000.000000012,380540.233931346
+"taman suria jaya","kuching","sarawak","flat",0,0,163,15,105000.000000004,155287.588965247
+"austin regency (pangsapuri austin perdana)","tebrau","johor","apartment",0,1,469.999999999998,15,380000.000000012,380540.233931346
+"sutramas","puchong","selangor","apartment",0,1,375.999999999998,15,319999.999999997,380540.233931346
+"regalia residence","kl city","kuala lumpur","service residence",0,1,679.000000000003,15,616504.999999982,919891.984987014
+"impian meridian","subang jaya","selangor","service residence",0,1,550.999999999998,15,595000.00000002,919891.984987014
+"pinang emas","batu ferringhi","penang","apartment",0,1,303.999999999999,15,170000,368168.862766419
+"the loft @ zetapark","setapak","kuala lumpur","service residence",0,0,465.000000000002,15,499999.999999986,380540.233931346
+"vista pinggiran apartment","seri kembangan","selangor","apartment",0,0,355.000000000002,15,309999.999999991,380540.233931346
+"one central park","desa parkcity","kuala lumpur","condominium",0,1,1164,15,1599999.99999998,2019708.77574512
+"seksyen 17 shah alam","shah alam","selangor","terrace house",1,1,301.000000000001,14,416000,368168.862766419
+"taman tasik perdana","pengkalan hulu","perak","terrace house",0,0,157,14,188000.000000002,257442.799087684
+"taman masjid tanah perdana","masjid tanah","melaka","semi d",0,1,128,14,410000.000000004,257442.799087684
+"taman seri bayu 2","sungai lalang","kedah","terrace house",0,1,268.000000000001,14,319999.999999997,368168.862766419
+"taman wangsa permai (p/l 13367)","lumut","perak","semi d",0,1,178.000000000001,14,498799.999999991,257442.799087684
+"plumeria @ bandar universiti","seri iskandar","perak","terrace house",0,0,174.999999999999,14,250000.000000004,257442.799087684
+"taman bukit senawang perdana (phase 2)","rantau","negeri sembilan","semi d",0,1,159,14,605000.000000014,257442.799087684
+"kampung merdeka - tr 105","batu pahat","johor","terrace house",1,1,184.999999999999,14,325000.000000008,257442.799087684
+"taman rasah jaya v","rasah","negeri sembilan","terrace house",0,1,182.000000000001,14,299999.999999989,257442.799087684
+"taman t&g phase 7","kota marudu","sabah","semi d",0,0,238.000000000001,14,499999.999999986,368168.862766419
+"taman pura kencana - tr. 41","batu pahat","johor","terrace house",0,1,226.999999999999,14,445000.00000001,368168.862766419
+"bandar tun razak","cheras","kuala lumpur","terrace house",1,0,297.999999999999,14,334999.999999999,368168.862766419
+"taman silibin ria","ipoh","perak","terrace house",1,0,293.000000000001,14,515000.000000014,368168.862766419
+"sierramas","sungai buloh","selangor","semi d",1,1,669.999999999999,14,2405000,919891.984987014
+"taman sri pulasan","seremban","negeri sembilan","terrace house",0,0,171.999999999999,14,215000,257442.799087684
+"taman datuk senu","sentul","kuala lumpur","terrace house",1,0,513,14,330000.000000012,601410.668601714
+"taman medan pasir saujana","ipoh","perak","terrace house",0,1,335.999999999998,14,558999.99999998,601410.668601714
+"senibong villas","masai","johor","bungalow",0,1,456.000000000002,14,2125000.0000001,380540.233931346
+"jalan indah","sibu","sarawak","terrace house",0,0,119,14,267500,257442.799087684
+"taman kesang mawar","muar","johor","terrace house",0,1,264.000000000001,14,484999.99999999,368168.862766419
+"majidee park","johor bahru","johor","bungalow",1,1,189,14,934999.999999977,257442.799087684
+"taman aman 3","lahad datu","sabah","terrace house",0,0,176,14,374999.999999982,257442.799087684
+"perumahan prima bg serai","bagan serai","perak","terrace house",0,1,222,14,309999.999999991,368168.862766419
+"taman tangga batu perdana","tanjong kling","melaka","terrace house",0,0,193.000000000001,14,307999.999999996,257442.799087684
+"taman haji mohd amin","permatang pauh","penang","flat",0,1,218,14,160000.000000006,155287.588965247
+"taman mengkudu","bukit minyak","penang","flat",0,1,167.000000000001,14,99999.9999999972,155287.588965247
+"magna ville","selayang","selangor","condominium",0,0,315.999999999999,14,350000.000000001,368168.862766419
+"1medini","iskandar puteri (nusajaya)","johor","condominium",0,1,366.000000000001,14,369999.999999997,380540.233931346
+"cherry","ipoh","perak","apartment",0,1,180,14,137500.000000005,257442.799087684
+"pantai panorama condominiums","kampung kerinchi (bangsar south)","kuala lumpur","condominium",0,1,437,14,482500.000000011,380540.233931346
+"residensi solaris parq","dutamas","kuala lumpur","service residence",0,1,1068,14,1089999.99999997,2019708.77574512
+"kelana d'putera","kelana jaya","selangor","condominium",0,0,341.999999999998,14,399999.999999992,380540.233931346
+"abadi indah","taman desa","kuala lumpur","apartment",0,0,326.999999999999,14,299999.999999989,380540.233931346
+"taman daya","kepong","selangor","terrace house",0,0,515.000000000002,13,550000.000000025,601410.668601714
+"taman berkeley","kapar","selangor","bungalow",1,1,275,13,540000.000000024,368168.862766419
+"p/l143461 seri mahkota damai fasa 6","kuantan","pahang","terrace house",0,1,143,13,235999.999999989,257442.799087684
+"taman bukit rangin 3","kuantan","pahang","terrace house",0,0,167.000000000001,13,209999.999999999,257442.799087684
+"ttdi jaya","shah alam","selangor","terrace house",0,1,382.000000000002,13,600000.000000009,601410.668601714
+"taman bayu indera, lukut","port dickson","negeri sembilan","terrace house",0,1,200.000000000001,13,304999.999999985,368168.862766419
+"taman pauh jaya","perai","penang","terrace house",0,1,399.999999999999,13,589999.999999999,601410.668601714
+"desa pengkalan bersatu","ipoh","perak","terrace house",0,0,240.999999999999,13,309799.999999998,368168.862766419
+"taman jati","rawang","selangor","terrace house",0,0,293.000000000001,13,299999.999999989,368168.862766419
+"perkampungan sri mahkota aman","kuantan","pahang","terrace house",0,1,156,13,250000.000000004,257442.799087684
+"taman bendahara","kuala selangor","selangor","semi d",1,1,214.999999999999,13,449999.999999999,368168.862766419
+"taman kobena","tampoi","johor","terrace house",0,0,206,13,330000.000000012,368168.862766419
+"taman semarak ii","nilai","negeri sembilan","terrace house",0,1,195.000000000001,13,299999.999999989,257442.799087684
+"tropicana bay residences","bayan lepas","penang","condominium",0,1,687.999999999997,13,595000.00000002,919891.984987014
+"seri jati","setia alam","selangor","apartment",0,1,397,13,325000.000000008,380540.233931346
+"valencia apartment","shah alam","selangor","apartment",0,0,178.999999999999,13,170000,257442.799087684
+"larkin heights","johor bahru","johor","service residence",0,0,387.999999999999,13,387999.999999996,380540.233931346
+"the clovers","bayan lepas","penang","condominium",0,1,472.000000000002,13,620000.000000015,380540.233931346
+"kiaraville","mont kiara","kuala lumpur","condominium",0,1,666.999999999997,13,1300000.00000005,919891.984987014
+"beverly hills 1","kota kinabalu","sabah","apartment",0,0,352.000000000001,13,265000.000000011,380540.233931346
+"ketumbar heights","cheras","kuala lumpur","condominium",0,1,344.000000000001,13,297999.999999988,380540.233931346
+"limau manis","bukit mertajam","penang","flat",0,1,220.999999999999,13,150000.000000001,155287.588965247
+"taman intan baiduri","batu caves","kuala lumpur","flat",0,0,183,13,129999.999999998,155287.588965247
+"lok kawi heights","papar","sabah","apartment",0,0,269,13,209999.999999999,368168.862766419
+"pandora @ tropicana metropark","subang jaya","selangor","service residence",0,1,608.000000000002,13,509999.999999995,919891.984987014
+"taman impian emas","tebrau","johor","flat",0,1,76.9999999999997,13,53000.0000000022,65346.6025552173
+"bukit oug condominiums","bukit jalil","kuala lumpur","condominium",0,1,258.000000000001,13,319999.999999997,368168.862766419
+"raintree park2","sungai bakap","penang","semi d",1,1,321.000000000001,12,526500.000000017,731320.085641864
+"medan lapangan cyber","ipoh","perak","terrace house",1,0,262.999999999999,12,434500.000000007,368168.862766419
+"t'lagenda@peramu (p/l 23051)","pekan","pahang","terrace house",0,1,184.000000000001,12,288000.000000005,257442.799087684
+"lot 5330, gurney","sitiawan","perak","semi d",0,1,210,12,627999.999999977,368168.862766419
+"laman permata","tebrau","johor","terrace house",0,1,563,12,788800.00000003,919891.984987014
+"lex living","ipoh","perak","terrace house",0,1,323.000000000001,12,568880,601410.668601714
+"taman desa tekkah sentosa","taiping","perak","terrace house",0,0,367,12,468799.999999981,601410.668601714
+"bandar baru sungai udang","sungai udang","melaka","terrace house",0,0,193.000000000001,12,309999.999999991,257442.799087684
+"alamanda parkland","serendah","selangor","terrace house",0,1,397,12,475000.00000001,601410.668601714
+"taman manjung point seksyen 2(pl 12194)","lumut","perak","terrace house",1,1,238.000000000001,12,299999.999999989,368168.862766419
+"shah alam utama","shah alam","selangor","terrace house",0,0,559.999999999997,12,1073249.99999999,919891.984987014
+"taman sinar mentari","bedong","kedah","terrace house",0,1,149,12,235000.000000001,257442.799087684
+"taman bukit panchor","nibong tebal","penang","terrace house",0,1,299.000000000001,12,374160.000000012,368168.862766419
+"taman meru makmur","kapar","selangor","terrace house",1,1,232,12,543000.000000015,368168.862766419
+"taman arkid","menglembu","perak","terrace house",0,0,239,12,250000.000000004,368168.862766419
+"taman teluk villa","penampang","sabah","terrace house",0,0,255.999999999999,12,432500.000000012,368168.862766419
+"taman seri jaromas","jenjarom","selangor","semi d",1,1,272.000000000001,12,789999.999999997,368168.862766419
+"crystal creek resort","taiping","perak","condominium",0,1,220,12,299999.999999989,368168.862766419
+"idaman lavender 3","sungai ara","penang","apartment",0,1,451.999999999999,12,339999.999999985,380540.233931346
+"seroja","setia alam","selangor","flat",0,1,300,12,200000.000000005,155287.588965247
+"palm court condominium","brickfields","kuala lumpur","condominium",0,0,387.999999999999,12,367499.99999999,380540.233931346
+"the vyne","sungai besi","kuala lumpur","condominium",0,0,540,12,467500.00000001,919891.984987014
+"sierra east","relau","penang","condominium",0,1,565.999999999999,12,786500.000000023,919891.984987014
+"cyber heights villa","cyberjaya","selangor","condominium",0,1,284.000000000001,12,364315.000000006,368168.862766419
+"wisma 2020","muar","johor","apartment",0,1,220,12,155000.000000002,368168.862766419
+"subang perdana goodyear court 6","subang jaya","selangor","apartment",0,1,345,12,282499.999999991,380540.233931346
+"kl traders square","setapak","kuala lumpur","service residence",0,1,532.999999999997,12,499999.999999986,919891.984987014
+"the peak residences","tanjong tokong","penang","condominium",0,1,543.999999999998,12,569999.999999981,919891.984987014
+"taman mosey hill","ipoh","perak","terrace house",0,0,211.000000000001,11,399879.999999993,368168.862766419
+"taman cempaka perdana","senawang","negeri sembilan","terrace house",0,0,244,11,397082.999999987,368168.862766419
+"rendang exora (pec lot 24818)","pekan","pahang","terrace house",0,1,186,11,260000.000000009,257442.799087684
+"taman pesona, sungai segamat","segamat","johor","terrace house",0,1,190.000000000001,11,363499.999999996,257442.799087684
+"taman riang diawan","kampar","perak","terrace house",0,0,171,11,239800.000000012,257442.799087684
+"taman serai merbau","bagan serai","perak","semi d",1,1,187.000000000001,11,317800.000000015,257442.799087684
+"taman matang murni (pl 13411 - 13412)","simpang","perak","terrace house",0,1,187.000000000001,11,288000.000000005,257442.799087684
+"taman amalina lestari","raub","pahang","terrace house",0,0,168,11,200000.000000005,257442.799087684
+"sanctuary garden","bukit mertajam","penang","semi d",0,1,328.999999999999,11,860000.000000008,380540.233931346
+"taman abadi heights","puchong","selangor","semi d",1,0,537.999999999998,11,756000.000000023,919891.984987014
+"taman wawasan / bandar baru mersing","mersing","johor","terrace house",0,1,214,11,260000.000000009,368168.862766419
+"taman parit bakar indah-tr.149","muar","johor","terrace house",0,1,281.999999999999,11,498000.000000005,368168.862766419
+"taman villa mutiara indah","sungai bakap","penang","semi d",1,1,245.999999999999,11,669999.999999968,368168.862766419
+"taman seri bayu 2","sungai petani","kedah","terrace house",0,1,155.000000000001,11,175000.000000008,257442.799087684
+"seksyen 19 shah alam","shah alam","selangor","terrace house",0,0,321.000000000001,11,449999.999999999,601410.668601714
+"taman impian alma","bukit mertajam","penang","terrace house",0,1,268.000000000001,11,399999.999999992,368168.862766419
+"taman rimba (pec lot 1135)","mentakab","pahang","terrace house",0,1,186,11,137000.000000005,257442.799087684
+"taman sekiah makmur","ulu bernam","perak","terrace house",0,0,178.999999999999,11,260000.000000009,257442.799087684
+"bandar seri botani","batu gajah","perak","terrace house",0,1,319.999999999999,11,825509.999999976,601410.668601714
+"taman damai impian 2","kuala lipis","pahang","terrace house",0,1,202.000000000001,11,289000.000000009,368168.862766419
+"bunga raya","bukit baru","melaka","terrace house",0,1,168.999999999999,11,299999.999999989,257442.799087684
+"taman bunga raya","sungai petani","kedah","terrace house",1,1,131,11,229999.999999992,257442.799087684
+"taman rimba (pec lot 3021)","mentakab","pahang","terrace house",0,1,184.999999999999,11,307999.999999996,257442.799087684
+"taman cempakasari","kapar","selangor","terrace house",0,0,276,11,360000.000000003,368168.862766419
+"taman setia jaya","batu pahat","johor","terrace house",0,1,234,11,380000.000000012,368168.862766419
+"taman impian indah","bukit mertajam","penang","terrace house",0,1,310,11,374999.999999982,368168.862766419
+"taman pulai bayu","skudai","johor","semi d",1,1,264.000000000001,11,899999.999999958,368168.862766419
+"taman intan baiduri","batu caves","kuala lumpur","terrace house",0,0,442.000000000001,11,819999.999999971,601410.668601714
+"taman pulai flora","skudai","johor","cluster house",1,1,357,11,600000.000000009,731320.085641864
+"taman saga","senai","johor","terrace house",0,1,259.000000000001,11,269999.999999997,368168.862766419
+"taman anggerik","tampoi","johor","terrace house",0,1,357,11,334999.999999999,601410.668601714
+"miharja (lrt maluri)","cheras","kuala lumpur","flat",0,0,305,11,245000.000000009,155287.588965247
+"d'rich executive suites","iskandar puteri (nusajaya)","johor","apartment",0,1,418.000000000001,11,399999.999999992,380540.233931346
+"sri alam condominium","shah alam","selangor","condominium",0,0,324,11,449999.999999999,380540.233931346
+"abadi villa","taman desa","kuala lumpur","condominium",0,0,370,11,449999.999999999,380540.233931346
+"bandar baru ampang","ampang","selangor","flat",0,0,243,11,139900.000000004,155287.588965247
+"koi tropika","puchong","selangor","service residence",0,0,459.000000000002,11,469999.999999981,380540.233931346
+"prai inai","perai","penang","apartment",0,1,313.999999999999,11,280000.000000004,368168.862766419
+"the westside one","desa parkcity","kuala lumpur","condominium",0,1,786.999999999997,11,1380000.00000002,919891.984987014
+"gemilang indah","jalan klang lama (old klang road)","kuala lumpur","condominium",0,1,313.999999999999,11,265000.000000011,368168.862766419
+"p' residence","kuching","sarawak","condominium",0,0,407.999999999999,11,469999.999999981,380540.233931346
+"lily & jasmine apartment","tampoi","johor","apartment",0,0,285,11,285000.000000004,368168.862766419
+"d'piazza","bayan baru","penang","condominium",0,1,517.999999999998,11,484999.99999999,919891.984987014
+"bistari lavender condominium","city centre","kuala lumpur","condominium",0,1,416.999999999999,11,460000.00000001,380540.233931346
+"the wadihana","johor bahru","johor","condominium",0,1,302,11,528000.000000001,368168.862766419
+"sri lempah","taman desa","kuala lumpur","flat",0,0,353.000000000001,11,196999.999999995,380540.233931346
+"tiffani kiara","mont kiara","kuala lumpur","condominium",0,1,561.000000000002,11,1120000.00000003,919891.984987014
+"casa desa","taman desa","kuala lumpur","condominium",0,1,442.000000000001,11,540000.000000024,380540.233931346
+"widuri apartment","butterworth","penang","apartment",0,1,293.999999999999,11,220000,368168.862766419
+"impian sentosa","klang","selangor","apartment",0,1,398.000000000001,11,299999.999999989,380540.233931346
+"the rainz","bukit jalil","kuala lumpur","condominium",0,1,621.000000000001,11,949999.999999978,919891.984987014
+"frinza court","johor bahru","johor","apartment",0,1,260.000000000001,11,350000.000000001,368168.862766419
+"puncak seri kelana","ara damansara","selangor","condominium",0,0,399.999999999999,11,420000.00000002,380540.233931346
+"ascenda residence @ skyarena","setapak","kuala lumpur","condominium",0,0,455,11,492999.999999987,380540.233931346
+"taman desa duyung","duyong","melaka","terrace house",0,1,187.000000000001,10,245000.000000009,257442.799087684
+"desa pantai indah","teluk kumbar","penang","terrace house",0,1,535.999999999999,10,750000.000000006,919891.984987014
+"taman sering ukay","ulu klang","selangor","terrace house",0,1,611.000000000003,10,1260000.00000005,919891.984987014
+"taman keramat permai","ulu klang","selangor","terrace house",0,0,451.999999999999,10,600000.000000009,601410.668601714
+"bandar sejahtera fasa 3","pokok sena","kedah","cluster house",1,1,156,10,408899.999999986,257442.799087684
+"taman seri sementa","kapar","selangor","terrace house",0,0,245.999999999999,10,332499.999999985,368168.862766419
+"p/l : 2195 (pt24541-pt24570)","sungai karang","pahang","semi d",0,1,121,10,380000.000000012,257442.799087684
+"idaman grand residence/sentosa idaman","klang","selangor","terrace house",0,1,531.999999999998,10,1205000.00000001,919891.984987014
+"taman mh permatang badak fasa 6 (p/l30398)","kuantan","pahang","terrace house",1,1,184.000000000001,10,289000.000000009,257442.799087684
+"taman rambai tengah sentosa","bukit rambai","melaka","semi d",0,1,126,10,422299.999999985,257442.799087684
+"yarra park springfield","sungai petani","kedah","terrace house",0,1,233,10,357899.999999994,368168.862766419
+"bb setia awan perdana residen 1","sitiawan","perak","cluster house",1,1,138.000000000001,10,220000,257442.799087684
+"taman lukut era","lukut","negeri sembilan","terrace house",0,1,217,10,418000.000000003,368168.862766419
+"taman pd restu","port dickson","negeri sembilan","terrace house",0,1,209,10,292045.000000001,368168.862766419
+"glenmarie heights","tebrau","johor","terrace house",0,1,412.999999999999,10,906949.999999985,601410.668601714
+"taman saujana seksyen 2 (taman setia)","bukit katil","melaka","semi d",1,1,136,10,200000.000000005,257442.799087684
+"taman bercham raya","tambun","perak","terrace house",0,0,177,10,194000.000000007,257442.799087684
+"taman lip sin","sungai dua","penang","terrace house",0,1,596,10,864999.999999986,919891.984987014
+"taman delima","tebrau","johor","terrace house",1,1,255.999999999999,10,425000.000000019,368168.862766419
+"taman bunga mawar","kuching","sarawak","terrace house",0,0,187.000000000001,10,245000.000000009,257442.799087684
+"rpa rimba panjang","sungai siput","perak","terrace house",0,0,76.9999999999997,10,115000.000000002,100696.393896423
+"setia impian 7","setia alam","selangor","semi d",0,1,472.999999999999,10,788999.999999992,380540.233931346
+"taman sentosa impian","dengkil","selangor","semi d",0,1,233,10,910500,368168.862766419
+"taman sri senai","senai","johor","terrace house",0,1,278.000000000001,10,280000.000000004,368168.862766419
+"taman puncak jelapang maju","ipoh","perak","terrace house",1,0,195.000000000001,10,290000.000000013,257442.799087684
