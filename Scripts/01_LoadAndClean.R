@@ -66,6 +66,7 @@ df$Transactions <- as.numeric(df$Transactions)
 boxplot(df$Median_Price, main = "Median Price")
 boxplot(df$Median_PSF, main = "Median PSF")
 boxplot(df$Transactions, main = "Transactions")
+
 # apply log transformation to reduce skewness in numerical variables
 df$Log_Median_Price <- log(df$Median_Price)
 df$Log_Median_PSF <- log(df$Median_PSF)

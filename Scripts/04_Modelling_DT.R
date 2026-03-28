@@ -105,6 +105,7 @@ tree_test_results_clean <- tree_prediction_df[, c(
 
 View(tree_test_results_clean)
 
+options(scipen = 999)
 plot(tree_actual_price, tree_predicted_price,
      main = "Actual vs Predicted Prices (Decision Tree)",
      xlab = "Actual Price",

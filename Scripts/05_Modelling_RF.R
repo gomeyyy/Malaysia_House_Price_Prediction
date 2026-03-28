@@ -21,10 +21,24 @@ rf_train_index <- createDataPartition(rf_df$Log_Median_Price, p = 0.8, list = FA
 rf_train_data <- rf_df[rf_train_index, ]
 rf_test_data  <- rf_df[-rf_train_index, ]
 
-ctrl <- trainControl(
+# reduced folds bcs rf training becomes too long to finish if use original
+fast_ctrl <- trainControl(
   method = "cv",
-  number = 10
+  number = 5
 )
+
+# Evaluation Function
+evaluate_model <- function(actual, predicted) {
+  rmse_val <- RMSE(predicted, actual)
+  mae_val  <- MAE(actual, predicted)
+  r2_val   <- R2(predicted, actual)
+  
+  data.frame(
+    RMSE = rmse_val,
+    MAE = mae_val,
+    R2 = r2_val
+  )
+}
 
 # -------------------
 # Random Forest Model
@@ -36,8 +50,9 @@ rf_model <- train(
   Log_Median_Price ~ Township + Area + State + Primary_Type + Multi_Type + Primary_Tenure + Log_Median_PSF + Log_Transactions,
   data = rf_train_data,
   method = "rf",
-  trControl = ctrl,
-  tuneLength = 3,
+  trControl = fast_ctrl,
+  tuneLength = 2,
+  ntree = 200,
   importance = TRUE
 )
 
@@ -82,6 +97,8 @@ rf_test_results_clean <- rf_prediction_df[, c(
 )]
 
 View(rf_test_results_clean)
+
+
 
 options(scipen = 999)
 plot(rf_actual_price, rf_predicted_price,

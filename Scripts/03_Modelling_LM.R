@@ -114,6 +114,7 @@ lm_test_results_clean <- lm_prediction_df[, c(
 
 View(lm_test_results_clean)
 
+options(scipen = 999)
 plot(actual_price, predicted_price,
      main = "Actual vs Predicted Prices (Linear Model)",
      xlab = "Actual Price",
