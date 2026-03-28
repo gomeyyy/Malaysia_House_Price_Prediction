@@ -14,7 +14,7 @@ summary(df)
 # -----------------
 # Modelling Prep
 # -----------------
-tree_model_df <- df[, c(
+tree_df <- df[, c(
   "Log_Median_Price",
   "Township",
   "Area",
@@ -25,12 +25,12 @@ tree_model_df <- df[, c(
   "Log_Median_PSF",
   "Log_Transactions"
 )]
-colSums(is.na(tree_model_df))
+colSums(is.na(tree_df))
 
 # Split dataset into train and test (80/20)
-train_index <- createDataPartition(tree_model_df$Log_Median_Price, p = 0.8, list = FALSE)
-tree_train_data <- tree_model_df[train_index, ]
-tree_test_data <- tree_model_df[-train_index, ]
+train_index <- createDataPartition(tree_df$Log_Median_Price, p = 0.8, list = FALSE)
+tree_train_data <- tree_df[train_index, ]
+tree_test_data <- tree_df[-train_index, ]
 
 # setup cross validation
 ctrl <- trainControl(

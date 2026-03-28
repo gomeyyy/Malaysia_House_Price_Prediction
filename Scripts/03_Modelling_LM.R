@@ -14,7 +14,7 @@ summary(df)
 # -----------------
 # Modelling Prep
 # -----------------
-model_df <- df[, c(
+lm_df <- df[, c(
   "Log_Median_Price",
   "Township",
   "Area",
@@ -25,12 +25,12 @@ model_df <- df[, c(
   "Log_Median_PSF",
   "Log_Transactions"
 )]
-colSums(is.na(model_df))
+colSums(is.na(lm_df))
 
 # Split dataset into train and test (80/20)
-train_index <- createDataPartition(model_df$Log_Median_Price, p = 0.8, list = FALSE)
-train_data <- model_df[train_index, ]
-test_data <- model_df[-train_index, ]
+train_index <- createDataPartition(lm_df$Log_Median_Price, p = 0.8, list = FALSE)
+train_data <- lm_df[train_index, ]
+test_data <- lm_df[-train_index, ]
 
 # Save area copy
 train_data$Area_Actual <- train_data$Area
