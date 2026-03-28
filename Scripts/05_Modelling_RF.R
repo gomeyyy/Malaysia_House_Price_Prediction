@@ -98,8 +98,6 @@ rf_test_results_clean <- rf_prediction_df[, c(
 
 View(rf_test_results_clean)
 
-
-
 options(scipen = 999)
 plot(rf_actual_price, rf_predicted_price,
      main = "Actual vs Predicted Prices (Random Forest)",
@@ -107,5 +105,24 @@ plot(rf_actual_price, rf_predicted_price,
      ylab = "Predicted Price")
 abline(0, 1, col = "red")
 
-varImp(rf_model)
-plot(varImp(rf_model))
+rf_imp <- varImp(rf_model, scale = TRUE)
+rf_imp
+rf_imp_df <- rf_imp$importance
+rf_imp_df$Variable <- rownames(rf_imp_df)
+
+rf_imp_df <- rf_imp_df[order(-rf_imp_df$Overall), ]
+
+head(rf_imp_df, 15)
+
+top15 <- head(rf_imp_df, 15)
+
+par(mar = c(5, 12, 4, 2))
+barplot(
+  rev(top15$Overall),
+  names.arg = rev(top15$Variable),
+  horiz = TRUE,
+  las = 1,
+  main = "Top 15 Variable Importance (Random Forest)",
+  xlab = "Importance",
+  cex.names = 0.7
+)
