@@ -1,8 +1,5 @@
 library(shiny)
 library(shinydashboard)
-library(caret)
-library(randomForest)
-library(rpart)
 library(ggplot2)
 library(plotly)
 library(dplyr)
@@ -11,9 +8,9 @@ library(scales)
 # ------------------
 # Load saved models, reference objects, and optional summary files
 # ------------------
-lm_model <- readRDS("lm_model.rds")
-tree_model <- readRDS("tree_model.rds")
-rf_model <- readRDS("rf_model.rds")
+lm_model_path <- "lm_model.rds"
+tree_model_path <- "tree_model.rds"
+rf_model_path <- "rf_model.rds"
 reference_data <- readRDS("reference_data.rds")
 lm_top_areas <- readRDS("lm_top_areas.rds")
 
@@ -59,6 +56,20 @@ format_rm <- function(x) {
 
 format_count <- function(x) {
   format(round(x), big.mark = ",", scientific = FALSE)
+}
+
+first_or_null <- function(x) {
+  if (length(x) == 0) NULL else x[[1]]
+}
+
+predict_from_saved_model <- function(model_path, newdata) {
+  model <- readRDS(model_path)
+  on.exit({
+    rm(model)
+    gc(verbose = FALSE)
+  }, add = TRUE)
+
+  as.numeric(exp(predict(model, newdata = newdata)))
 }
 
 best_metric_row <- if (!is.null(model_metrics) && "R2" %in% names(model_metrics)) {
@@ -337,15 +348,21 @@ ui <- dashboardPage(
 
 server <- function(input, output, session) {
   observe({
+    req(input$state)
+
     state_data <- reference_data %>%
       filter(State == input$state)
 
     available_areas <- sort(unique(as.character(state_data$Area)))
-    selected_area <- if (!is.null(input$area) && input$area %in% available_areas) input$area else available_areas[[1]]
+    selected_area <- if (!is.null(input$area) && input$area %in% available_areas) {
+      input$area
+    } else {
+      first_or_null(available_areas)
+    }
 
     updateSelectInput(session, "area", choices = available_areas, selected = selected_area)
 
-    township_data <- if (!is.null(selected_area) && length(selected_area) > 0) {
+    township_data <- if (!is.null(selected_area) && nzchar(selected_area)) {
       state_data %>% filter(Area == selected_area)
     } else {
       state_data
@@ -355,7 +372,7 @@ server <- function(input, output, session) {
     selected_township <- if (!is.null(input$township) && input$township %in% available_townships) {
       input$township
     } else {
-      available_townships[[1]]
+      first_or_null(available_townships)
     }
 
     updateSelectInput(session, "township", choices = available_townships, selected = selected_township)
@@ -381,64 +398,87 @@ server <- function(input, output, session) {
 
   prediction_results <- eventReactive(input$predict_btn, {
     validate(
+      need(!is.null(input$state) && nzchar(input$state), "Please select a state."),
+      need(!is.null(input$area) && nzchar(input$area), "Please select an area."),
+      need(!is.null(input$township) && nzchar(input$township), "Please select a township."),
+      need(!is.null(input$primary_type) && nzchar(input$primary_type), "Please select a property type."),
       need(input$median_psf > 0, "Median PSF must be greater than 0."),
       need(input$transactions > 0, "Transactions must be greater than 0.")
     )
 
-    lm_area_value <- if (input$area %in% lm_top_areas) input$area else "Other"
+    tryCatch({
+      requireNamespace("caret", quietly = TRUE)
+      requireNamespace("randomForest", quietly = TRUE)
+      requireNamespace("rpart", quietly = TRUE)
 
-    lm_new_data <- data.frame(
-      Area = factor(lm_area_value, levels = c(lm_top_areas, "Other")),
-      Primary_Type = factor(input$primary_type, levels = levels(reference_data$Primary_Type)),
-      Multi_Type = as.numeric(input$multi_type),
-      Primary_Tenure = as.numeric(input$primary_tenure),
-      Log_Median_PSF = log(input$median_psf),
-      Log_Transactions = log(input$transactions)
-    )
+      lm_area_value <- if (input$area %in% lm_top_areas) input$area else "Other"
 
-    tree_new_data <- data.frame(
-      Township = factor(input$township, levels = levels(reference_data$Township)),
-      Area = factor(input$area, levels = levels(reference_data$Area)),
-      State = factor(input$state, levels = levels(reference_data$State)),
-      Primary_Type = factor(input$primary_type, levels = levels(reference_data$Primary_Type)),
-      Multi_Type = as.numeric(input$multi_type),
-      Primary_Tenure = as.numeric(input$primary_tenure),
-      Log_Median_PSF = log(input$median_psf),
-      Log_Transactions = log(input$transactions)
-    )
+      lm_new_data <- data.frame(
+        Area = factor(lm_area_value, levels = c(lm_top_areas, "Other")),
+        Primary_Type = factor(input$primary_type, levels = levels(reference_data$Primary_Type)),
+        Multi_Type = as.numeric(input$multi_type),
+        Primary_Tenure = as.numeric(input$primary_tenure),
+        Log_Median_PSF = log(input$median_psf),
+        Log_Transactions = log(input$transactions)
+      )
 
-    rf_new_data <- tree_new_data
+      tree_new_data <- data.frame(
+        Township = factor(input$township, levels = levels(reference_data$Township)),
+        Area = factor(input$area, levels = levels(reference_data$Area)),
+        State = factor(input$state, levels = levels(reference_data$State)),
+        Primary_Type = factor(input$primary_type, levels = levels(reference_data$Primary_Type)),
+        Multi_Type = as.numeric(input$multi_type),
+        Primary_Tenure = as.numeric(input$primary_tenure),
+        Log_Median_PSF = log(input$median_psf),
+        Log_Transactions = log(input$transactions)
+      )
 
-    lm_price <- as.numeric(exp(predict(lm_model, newdata = lm_new_data)))
-    tree_price <- as.numeric(exp(predict(tree_model, newdata = tree_new_data)))
-    rf_price <- as.numeric(exp(predict(rf_model, newdata = rf_new_data)))
+      validate(
+        need(!anyNA(lm_new_data), "The selected inputs are not compatible with the saved linear model."),
+        need(!anyNA(tree_new_data), "The selected location or property type is not available in the saved training data.")
+      )
 
-    pred_df <- data.frame(
-      Model = c("Multiple Linear Regression", "Decision Tree", "Random Forest"),
-      Predicted_Price = c(lm_price, tree_price, rf_price),
-      stringsAsFactors = FALSE
-    )
+      rf_new_data <- tree_new_data
 
-    recommended_row <- if (!is.null(model_metrics) && "R2" %in% names(model_metrics)) {
-      merged_df <- pred_df %>%
-        left_join(model_metrics[, c("Model", "R2")], by = "Model")
+      lm_price <- predict_from_saved_model(lm_model_path, lm_new_data)
+      tree_price <- predict_from_saved_model(tree_model_path, tree_new_data)
+      rf_price <- predict_from_saved_model(rf_model_path, rf_new_data)
 
-      merged_df[which.max(merged_df$R2), , drop = FALSE]
-    } else {
-      pred_df[pred_df$Model == "Random Forest", , drop = FALSE]
-    }
+      pred_df <- data.frame(
+        Model = c("Multiple Linear Regression", "Decision Tree", "Random Forest"),
+        Predicted_Price = c(lm_price, tree_price, rf_price),
+        stringsAsFactors = FALSE
+      )
 
-    list(
-      lm_price = lm_price,
-      tree_price = tree_price,
-      rf_price = rf_price,
-      avg_price = mean(pred_df$Predicted_Price),
-      pred_df = pred_df,
-      lm_area_value = lm_area_value,
-      recommended_model = recommended_row$Model[[1]],
-      recommended_price = recommended_row$Predicted_Price[[1]],
-      recommended_r2 = if ("R2" %in% names(recommended_row)) recommended_row$R2[[1]] else NA_real_
-    )
+      recommended_row <- if (!is.null(model_metrics) && "R2" %in% names(model_metrics)) {
+        merged_df <- pred_df %>%
+          left_join(model_metrics[, c("Model", "R2")], by = "Model")
+
+        merged_df[which.max(merged_df$R2), , drop = FALSE]
+      } else {
+        pred_df[pred_df$Model == "Random Forest", , drop = FALSE]
+      }
+
+      list(
+        lm_price = lm_price,
+        tree_price = tree_price,
+        rf_price = rf_price,
+        avg_price = mean(pred_df$Predicted_Price),
+        pred_df = pred_df,
+        lm_area_value = lm_area_value,
+        recommended_model = recommended_row$Model[[1]],
+        recommended_price = recommended_row$Predicted_Price[[1]],
+        recommended_r2 = if ("R2" %in% names(recommended_row)) recommended_row$R2[[1]] else NA_real_
+      )
+    }, error = function(e) {
+      if (inherits(e, "shiny.silent.error")) {
+        stop(e)
+      }
+
+      validate(
+        need(FALSE, paste("Prediction failed:", conditionMessage(e)))
+      )
+    })
   })
 
   output$prediction_context <- renderText({
