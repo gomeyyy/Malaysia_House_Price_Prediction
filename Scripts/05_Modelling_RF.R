@@ -126,3 +126,5 @@ barplot(
   xlab = "Importance",
   cex.names = 0.7
 )
+
+write.csv(rf_test_results_clean, "Datasets/rf_model_predicted_price.csv", row.names = FALSE)
