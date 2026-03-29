@@ -45,6 +45,7 @@ ui <- dashboardPage(
   dashboardSidebar(
     sidebarMenu(
       menuItem("Prediction Dashboard", tabName = "prediction", icon = icon("chart-line")),
+      menuItem("EDA / Market Insights", tabName = "eda", icon = icon("chart-bar")),
       menuItem("Model Overview", tabName = "overview", icon = icon("table"))
     )
   ),
@@ -138,6 +139,79 @@ ui <- dashboardPage(
         )
       ),
       tabItem(
+        tabName = "eda",
+        fluidRow(
+          box(
+            title = "EDA Filters",
+            width = 3,
+            status = "primary",
+            solidHeader = TRUE,
+            selectInput(
+              inputId = "eda_type",
+              label = "Filter by Property Type",
+              choices = c("All", sort(unique(as.character(reference_data$Primary_Type))))
+            ),
+            selectInput(
+              inputId = "eda_state",
+              label = "Filter by State",
+              choices = c("All", sort(unique(as.character(reference_data$State))))
+            ),
+            sliderInput(
+              inputId = "hist_bins",
+              label = "Histogram Bins",
+              min = 10,
+              max = 60,
+              value = 30,
+              step = 5
+            ),
+            checkboxInput(
+              inputId = "show_trend",
+              label = "Show Trend Line on Scatter Plot",
+              value = TRUE
+            )
+          ),
+          box(
+            title = "Median Price Distribution",
+            width = 9,
+            status = "warning",
+            solidHeader = TRUE,
+            plotOutput("hist_plot", height = 300)
+          )
+        ),
+        fluidRow(
+          box(
+            title = "Median Price by State",
+            width = 6,
+            status = "success",
+            solidHeader = TRUE,
+            plotOutput("state_bar_plot", height = 320)
+          ),
+          box(
+            title = "Median Price vs Median PSF",
+            width = 6,
+            status = "info",
+            solidHeader = TRUE,
+            plotOutput("psf_scatter_plot", height = 320)
+          )
+        ),
+        fluidRow(
+          box(
+            title = "Median Price by Property Type",
+            width = 6,
+            status = "primary",
+            solidHeader = TRUE,
+            plotOutput("type_bar_plot", height = 320)
+          ),
+          box(
+            title = "Top 10 Areas by Median Price",
+            width = 6,
+            status = "danger",
+            solidHeader = TRUE,
+            plotOutput("top_areas_plot", height = 320)
+          )
+        )
+      ),
+      tabItem(
         tabName = "overview",
         fluidRow(
           valueBoxOutput("records_box", width = 3),
@@ -208,6 +282,23 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output, session) {
+  eda_filtered <- reactive({
+    df <- reference_data
+    
+    if (input$eda_type != "All") {
+      df <- df[df$Primary_Type == input$eda_type, ]
+    }
+    
+    if (input$eda_state != "All") {
+      df <- df[df$State == input$eda_state, ]
+    }
+    
+    df$Median_Price <- exp(df$Log_Median_Price)
+    df$Median_PSF <- exp(df$Log_Median_PSF)
+    df$Transactions <- exp(df$Log_Transactions)
+    
+    df
+  })
   output$records_box <- renderValueBox({
     valueBox(nrow(reference_data), "Records", icon = icon("database"), color = "purple")
   })
@@ -242,6 +333,75 @@ server <- function(input, output, session) {
       "<li>Predictions are trained on <b>log-transformed prices</b> and converted back to MYR.</li>",
       "</ul>"
     ))
+  })
+  
+  output$hist_plot <- renderPlot({
+    df <- eda_filtered()
+    req(nrow(df) > 0)
+    
+    ggplot(df, aes(x = Median_Price)) +
+      geom_histogram(bins = input$hist_bins) +
+      labs(x = "Median Price (MYR)", y = "Count") +
+      theme_minimal()
+  })
+  
+  output$state_bar_plot <- renderPlot({
+    df <- eda_filtered()
+    req(nrow(df) > 0)
+    
+    state_summary <- aggregate(Median_Price ~ State, data = df, FUN = median)
+    state_summary <- state_summary[order(-state_summary$Median_Price), ]
+    
+    ggplot(state_summary, aes(x = reorder(State, Median_Price), y = Median_Price)) +
+      geom_col() +
+      coord_flip() +
+      labs(x = "State", y = "Median Price (MYR)") +
+      theme_minimal()
+  })
+  
+  output$psf_scatter_plot <- renderPlot({
+    df <- eda_filtered()
+    req(nrow(df) > 0)
+    
+    p <- ggplot(df, aes(x = Median_PSF, y = Median_Price)) +
+      geom_point(alpha = 0.5) +
+      labs(x = "Median PSF (MYR)", y = "Median Price (MYR)") +
+      theme_minimal()
+    
+    if (isTRUE(input$show_trend)) {
+      p <- p + geom_smooth(method = "lm", se = FALSE)
+    }
+    
+    p
+  })
+  
+  output$type_bar_plot <- renderPlot({
+    df <- eda_filtered()
+    req(nrow(df) > 0)
+    
+    type_summary <- aggregate(Median_Price ~ Primary_Type, data = df, FUN = median)
+    type_summary <- type_summary[order(-type_summary$Median_Price), ]
+    
+    ggplot(type_summary, aes(x = reorder(Primary_Type, Median_Price), y = Median_Price)) +
+      geom_col() +
+      coord_flip() +
+      labs(x = "Property Type", y = "Median Price (MYR)") +
+      theme_minimal()
+  })
+  
+  output$top_areas_plot <- renderPlot({
+    df <- eda_filtered()
+    req(nrow(df) > 0)
+    
+    area_summary <- aggregate(Median_Price ~ Area, data = df, FUN = median)
+    area_summary <- area_summary[order(-area_summary$Median_Price), ]
+    area_summary <- head(area_summary, 10)
+    
+    ggplot(area_summary, aes(x = reorder(Area, Median_Price), y = Median_Price)) +
+      geom_col() +
+      coord_flip() +
+      labs(x = "Area", y = "Median Price (MYR)") +
+      theme_minimal()
   })
   
   output$metrics_table <- renderTable({
